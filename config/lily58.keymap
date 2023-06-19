@@ -27,7 +27,7 @@
                                             &kp LALT    &kp LGUI    &mo 1       &kp SPACE           &kp RET     &mo 2       &kp BSPC    &kp RGUI
             >;
             // Encoder supported only on left/central side, see https://github.com/zmkfirmware/zmk/pull/728
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         lower_layer {
@@ -45,7 +45,7 @@
                                             &trans      &trans      &trans      &trans      &trans              &trans      &trans      &trans
             >;
             // Encoder supported only on left/central side, see https://github.com/zmkfirmware/zmk/pull/728
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         raise_layer {
@@ -63,7 +63,7 @@
                                             &trans      &trans      &trans      &trans      &trans              &trans      &trans      &trans
             >;
             // Encoder supported only on left/central side, see https://github.com/zmkfirmware/zmk/pull/728
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
     };
 };
