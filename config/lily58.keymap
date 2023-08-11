@@ -42,7 +42,7 @@
 &trans      &kp ASTRK       &kp GT          &kp RBKT    &kp RBRC    &kp RPAR                                    &kp UNDER   &kp BSLH    &kp FSLH    &kp AMPS    &kp PIPE    &kp CARET
 &trans      &kp PRCNT       &kp LT          &kp LBKT    &kp LBRC    &kp LPAR                                    &kp DOT     &kp SEMI    &kp COMMA   &kp COLON   &kp HASH    &kp AT
 &trans      &kp DOLLAR      &kp TILDE       &kp EQUAL   &kp PLUS    &kp MINUS   &trans      &trans              &kp DQT     &kp SQT     &kp GRAVE   &kp EXCL    &kp QMARK   &trans
-                                            &trans      &trans      &trans      &trans      &trans              &trans      &trans      &trans
+                                            &trans      &trans      &trans      &trans      &trans              &trans      &kp DEL     &trans
             >;
             // Encoder supported only on left/central side, see https://github.com/zmkfirmware/zmk/pull/728
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
@@ -60,7 +60,7 @@
 &trans      &trans          &trans          &kp N7      &kp N8      &kp N9                                      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
 &trans      &trans          &trans          &kp N4      &kp N5      &kp N6                                      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RIGHT   &trans
 &trans      &trans          &trans          &kp N1      &kp N2      &kp N3      &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-                                            &trans      &trans      &trans      &trans      &trans              &trans      &kp DEL     &trans
+                                            &trans      &trans      &trans      &trans      &trans              &trans      &trans      &trans
             >;
             // Encoder supported only on left/central side, see https://github.com/zmkfirmware/zmk/pull/728
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
