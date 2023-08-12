@@ -13,54 +13,54 @@
 
         default_layer {
 // Colemak-DHm: Colemak for matrix-like keyboards
-// ------------------------------------------------------------------------------------------------------------
-// |  ESC  |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |   `   |
-// |  TAB  |  Q  |  W  |  F   |  P   |  B   |                   |  J   |  L    |  U    |  Y   |   ;   |   -   |
-// |  CTRL |  A  |  R  |  S   |  T   |  G   |                   |  M   |  N    |  E    |  I   |   O   |   '   |
-// | SHIFT |  Z  |  X  |  C   |  D   |  V   |   P/P  |  | Mute  |  K   |  H    |  ,    |  .   |   /   | SHIFT |
-//                     | ALT  | GUI  | LOWER|  SPACE |  | ENTER | RAISE| BSPC  | GUI   |
             bindings = <
-&kp ESC     &kp N1          &kp N2          &kp N3      &kp N4      &kp N5                                       &kp N6       &kp N7      &kp N8      &kp N9      &kp N0      &kp GRAVE
-&kp TAB     &kp Q           &kp W           &kp F       &kp P       &kp B                                        &kp J        &kp L       &kp U       &kp Y       &kp SEMI    &kp MINUS
-&kp LSHFT   &kp A           &mt LGUI R      &mt LALT S  &mt LCTRL T &mt RSHIFT G                                 &mt LSHIFT M &mt RCTRL N &mt RALT E  &mt RGUI I  &kp O       &kp SQT
-&kp LCTRL   &kp Z           &kp X           &kp C       &kp D       &kp V        &kp C_PLAY_PAUSE    &kp C_MUTE  &kp K        &kp H       &kp COMMA   &kp DOT     &kp FSLH    &kp RSHFT
-                                            &kp LALT    &kp LGUI    &mo 1        &kp SPACE           &kp RET     &mo 2        &kp BSPC    &kp RGUI
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &kp ESC       &kp N1        &kp N2        &kp N3        &kp N4        &kp N5                                               &kp N6        &kp N7        &kp N8        &kp N9        &kp N0        &kp GRAVE
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &kp TAB       &kp Q         &kp W         &kp F         &kp P         &kp B                                                &kp J         &kp L         &kp U         &kp Y         &kp SEMI      &kp MINUS
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &kp LSHFT     &kp A         &mt LGUI R    &mt LALT S    &mt LCTRL T   &mt RSHIFT G                                         &mt LSHIFT M  &mt RCTRL N   &mt RALT E    &mt RGUI I    &kp O         &kp SQT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤─────────────────╮  ╭─────────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &kp LCTRL     &kp Z         &kp X         &kp C         &kp D         &kp V         &kp C_PLAY_PAUSE     &kp C_MUTE        &kp K         &kp H         &kp COMMA     &kp DOT       &kp FSLH      &kp RSHFT
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤─────────────┤─────────────────┤  ├─────────────────├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &kp LALT      &kp LGUI      &mo 1         &kp SPACE            &kp RET           &mo 2         &kp BSPC      &kp RGUI
+                                             ╰─────────────┴─────────────┴─────────────┴─────────────────╯  ╰─────────────────┴─────────────┴─────────────┴─────────────╯
             >;
             // Encoder supported only on left/central side, see https://github.com/zmkfirmware/zmk/pull/728
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         lower_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |      |      |                   |      |       |       |      |       |       |
-// |       |  *  |  >  |  ]   |  }   |  )   |                   |  _   |   \   |  /    |  &   |  "|"  |   ^   |
-// |       |  %  |  <  |  [   |  {   |  (   |                   |  .   |   ;   |  ,    |  :   |   #   |   @   |
-// |       |  $  |  ~  |  =   |  +   |  -   |        |  |       |  "   |   '   |  `    |  !   |   ?   |       |
-//                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&trans      &trans          &trans          &trans      &trans      &trans                                      &trans      &trans      &trans      &trans      &trans      &trans
-&trans      &kp ASTRK       &kp GT          &kp RBKT    &kp RBRC    &kp RPAR                                    &kp UNDER   &kp BSLH    &kp FSLH    &kp AMPS    &kp PIPE    &kp CARET
-&trans      &kp PRCNT       &kp LT          &kp LBKT    &kp LBRC    &kp LPAR                                    &kp DOT     &kp SEMI    &kp COMMA   &kp COLON   &kp HASH    &kp AT
-&trans      &kp DOLLAR      &kp TILDE       &kp EQUAL   &kp PLUS    &kp MINUS   &trans      &trans              &kp DQT     &kp SQT     &kp GRAVE   &kp EXCL    &kp QMARK   &trans
-                                            &trans      &trans      &trans      &trans      &trans              &trans      &kp DEL     &trans
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &trans        &trans        &trans        &trans        &trans        &trans                                               &trans        &trans        &trans        &trans        &trans        &trans
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &trans        &kp ASTRK     &kp GT        &kp RBKT      &kp RBRC      &kp RPAR                                             &kp UNDER     &kp BSLH      &kp FSLH      &kp AMPS      &kp PIPE      &kp CARET
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &trans        &kp PRCNT     &kp LT        &kp LBKT      &kp LBRC      &kp LPAR                                             &kp DOT       &kp SEMI      &kp COMMA     &kp COLON     &kp HASH      &kp AT
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤─────────────────╮  ╭─────────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &trans        &kp DOLLAR    &kp TILDE     &kp EQUAL     &kp PLUS      &kp MINUS     &trans               &trans            &kp DQT       &kp SQT       &kp GRAVE     &kp EXCL      &kp QMARK     &trans
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤─────────────┤─────────────────┤  ├─────────────────├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &trans        &trans        &trans        &trans               &trans            &trans        &kp DEL       &trans
+                                             ╰─────────────┴─────────────┴─────────────┴─────────────────╯  ╰─────────────────┴─────────────┴─────────────┴─────────────╯
             >;
             // Encoder supported only on left/central side, see https://github.com/zmkfirmware/zmk/pull/728
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
         raise_layer {
-// ------------------------------------------------------------------------------------------------------------
-// |       |     |     |      |  0   |      |                   |  F7  |  F8   |  F9   | F10  |  F11  |  F12  |
-// |       |     |     |  7   |  8   |  9   |                   |  F1  |  F2   |  F3   | F4   |  F5   |  F6   |
-// |       |     |     |  4   |  5   |  6   |                   |  <-  |   V   |   ^   |  ->  |       |       |
-// |       |     |     |  1   |  2   |  3   |        |  |       |      |       |       |      |       |       |
-//                     |      |      |      |        |  |       |      |       |       |
             bindings = <
-&trans      &trans          &trans          &trans      &kp N0      &trans                                      &kp F7      &kp F8      &kp F9      &kp F10     &kp F11     &kp F12
-&trans      &trans          &trans          &kp N7      &kp N8      &kp N9                                      &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &kp F6
-&trans      &trans          &trans          &kp N4      &kp N5      &kp N6                                      &kp LEFT    &kp DOWN    &kp UP      &kp RIGHT   &kp RIGHT   &trans
-&trans      &trans          &trans          &kp N1      &kp N2      &kp N3      &trans      &trans              &trans      &trans      &trans      &trans      &trans      &trans
-                                            &trans      &trans      &trans      &trans      &trans              &trans      &trans      &trans
+// ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮                                      ╭─────────────┬─────────────┬─────────────┬─────────────┬─────────────┬─────────────╮
+     &trans        &trans        &trans        &trans        &kp N0        &trans                                              &kp F7         &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &trans        &trans        &trans        &kp N7        &kp N8        &kp N9                                              &kp F1         &kp F2        &kp F3        &kp F4        &kp F5        &kp F6
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤                                      ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &trans        &trans        &trans        &kp N4        &kp N5        &kp N6                                              &kp LEFT       &kp DOWN      &kp UP        &kp RIGHT     &kp RIGHT     &trans
+// ├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤─────────────────╮  ╭─────────────────├─────────────┼─────────────┼─────────────┼─────────────┼─────────────┤─────────────┤
+     &trans        &trans        &trans        &kp N1        &kp N2        &kp N3            &trans           &trans           &trans         &trans        &trans        &trans        &trans        &trans
+// ╰─────────────┴─────────────┴─────────────┼─────────────┼─────────────┤─────────────┤─────────────────┤  ├─────────────────├─────────────┼─────────────┼─────────────┼─────────────┴─────────────┴─────────────╯
+                                               &trans        &trans        &trans            &trans           &trans           &trans         &trans        &trans
+                                             ╰─────────────┴─────────────┴─────────────┴─────────────────╯  ╰─────────────────┴─────────────┴─────────────┴─────────────╯
             >;
             // Encoder supported only on left/central side, see https://github.com/zmkfirmware/zmk/pull/728
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
