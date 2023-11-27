@@ -2,7 +2,9 @@
 
 The `main` layer follows the Colemak-DHm.
 
-## Layer: main
+## Layers
+
+### Layer: main
 
 ```plain
 .-----------------------------------------.                    .-----------------------------------------.
@@ -18,7 +20,7 @@ The `main` layer follows the Colemak-DHm.
                   `--------------------' '------'         '------' '---------------------'
 ```
 
-## Layer: symbols
+### Layer: symbols
 
 ```plain
 .-----------------------------------------.                    .-----------------------------------------.
@@ -34,7 +36,7 @@ The `main` layer follows the Colemak-DHm.
                   `--------------------' '------'         '------' '---------------------'
 ```
 
-## Layer: number
+### Layer: number
 
 ```plain
 .-----------------------------------------.                    .-----------------------------------------.
@@ -49,3 +51,8 @@ The `main` layer follows the Colemak-DHm.
                   |       |      |     | /       /       \      \  |       |      |      |
                   `--------------------' '------'         '------' '---------------------'
 ```
+
+## Resources
+
+- [zmk](https://zmk.dev/)
+- [layout databse](https://keymapdb.com/?firmwares=ZMK)
