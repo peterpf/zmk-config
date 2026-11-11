@@ -1,0 +1,10 @@
+# nix build output
+/result
+/result-*
+
+# local west workspace (nix develop / west build)
+/.west
+/modules
+/zephyr
+/zmk
+/build
